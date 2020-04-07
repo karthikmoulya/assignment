@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/user/user-data">User</a></li>
+          <li><a href="/">Data</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="/user/user-data" method="POST">
+        <input type="text" name="user" id="user" />
+        <button type="submit">Add User</button>
+      </form>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>

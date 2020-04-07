@@ -1,0 +1,19 @@
+<%- include("includes/head.ejs") %>
+</head>
+
+  <body>
+    <%- include("includes/navigation.ejs") %>
+
+    <main>
+      <% if(prods.length > 0) { %>
+      <div 
+        <% for(let prod of prods ) { %>
+          <ul>
+            <li><%= prod.user %></li>
+          </ul>   
+        <% } %>
+      </div>   
+      <% } else { %>
+        <h1>Users Not Found!</h1>
+      <% } %>
+
